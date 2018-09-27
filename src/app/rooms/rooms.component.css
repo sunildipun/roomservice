@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px; }
+  
+  .header {
+    height: 45vh;
+    background-image: url("../../assets/image/modern-black-and-white-living-room-stripede-rug.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative; 
+    filter: grayscale(80%);
+}
+
+#top-button{
+    margin: 10px;
+    color: #fff;
+    font-size: 30px;
+}
+  
+.header__text-box {
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 1%;
+    text-align: center; }
+
+.menu-content{
+    font-size:0.7em;;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    float: left;
+    margin: 5px;
+}
+
+.main-container{
+    height: 50vh;
+    background: #fafafc;
+    /* filter: blur(3px); */
+    /* display: flex;
+    flex-direction: row; */
+    padding: 25px;
+}
+
+.main-container__head{
+    color:#000;
+    height: 20%;
+    width: 100%;
+}
+
+.main-container__body{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin: 5px;
+}
+  
+.card__upper{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+#icon_large{
+    margin: 20px;
+    font-size: 3.5em;
+    color: #4285f4;
+}
+
+#toggle_large{
+    margin: 15px;
+    font-size: 2em;
+    color: #4285f4;
+    /* float: left; */
+    margin-top: 20%;
+}
+
+#heading{
+    color:#000;
+    padding-left: 20px;
+}
+
+#body{
+    padding-left: 20px;
+    font-size: 10px;
+}

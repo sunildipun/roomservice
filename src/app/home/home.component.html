@@ -1,0 +1,36 @@
+<body>
+  <div class="container">
+    <div class="header">
+      <h2 class="header__text">Rooms</h2>
+    </div>
+
+    <hr>
+
+    <div class="tab">
+        <button class="tablinks" >Ground Floor</button>
+        <button class="tablinks" >First Floor</button>
+        <button class="tablinks" >Master Ensuite</button>
+    </div>
+
+    <div class="main">
+      <div class="cards" (click)="goToRoom()">
+        <div class="cards__head">
+          <h3 id="head-text">Room -1</h3>
+          <ul class="menu-content">
+            <li><a class="fa fa-volume-up"></a></li>
+            <li><a class="fa fa-power-off"></a></li>
+          </ul>
+        </div>
+        <div class="cards__body">
+          <img src="../../assets/image/modern-black-and-white-living-room-stripede-rug.jpg" id="image_room" alt="image_main">
+          <div class="option">
+              <ul class="menu-content">
+                  <li><a class="fa fa-volume-up"></a></li>
+                  <li><a class="fa fa-power-off"></a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
