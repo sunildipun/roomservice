@@ -7,9 +7,7 @@
     <hr>
 
     <div class="tab">
-        <button class="tablinks" >Ground Floor</button>
-        <button class="tablinks" >First Floor</button>
-        <button class="tablinks" >Master Ensuite</button>
+        <button class="tablinks" *ngFor="let room of rooms" >{{room.name}}</button>
     </div>
 
     <div class="main">
