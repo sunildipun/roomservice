@@ -7,13 +7,13 @@
     <hr>
 
     <div class="tab">
-        <button class="tablinks" *ngFor="let room of rooms" >{{room.name}}</button>
+        <button class="tablinks" *ngFor="let room of rooms" (click)="roomClicked(room)">{{room.name}}</button>
     </div>
 
     <div class="main">
-      <div class="cards" (click)="goToRoom()">
+      <div class="cards" (click)="goToRoom(someroom)" *ngFor= "let someroom of selectedRoom">
         <div class="cards__head">
-          <h3 id="head-text">Room -1</h3>
+          <h3 id="head-text">{{someroom.name}}</h3>
           <ul class="menu-content">
             <li><a class="fa fa-volume-up"></a></li>
             <li><a class="fa fa-power-off"></a></li>

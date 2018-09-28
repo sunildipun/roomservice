@@ -1,110 +1,177 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; }
-  
-  body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #777;
-    padding: 30px; }
-  
-  .header {
-    height: 45vh;
-    background-image: url("../../assets/image/modern-black-and-white-living-room-stripede-rug.jpg");
-    background-size: cover;
-    background-position: top;
-    position: relative; 
-    filter: grayscale(80%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#top-button{
-    margin: 10px;
-    color: #fff;
-    font-size: 30px;
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
 }
-  
+
+.header {
+  height: 45vh;
+  background-image: url("../../assets/image/modern-black-and-white-living-room-stripede-rug.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  filter: grayscale(80%);
+}
+
+#top-button {
+  margin: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+#top-button-1 {
+  margin: 10px;
+  color: #950000;
+  font-size: 30px;
+}
+
 .header__text-box {
-    color: #fff;
-    position: absolute;
-    top: 60%;
-    left: 1%;
-    text-align: center; }
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 1%;
+  text-align: center;
+}
 
-.menu-content{
-    font-size:0.7em;;
+.menu-content {
+  font-size: 0.7em;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-li{
-    float: left;
-    margin: 5px;
+li {
+  float: left;
+  margin: 5px;
 }
 
-.main-container{
-    height: 50vh;
-    background: #fafafc;
-    /* filter: blur(3px); */
-    /* display: flex;
+.main-container {
+  height: 50vh;
+  background: #fafafc;
+  /* filter: blur(3px); */
+  /* display: flex;
     flex-direction: row; */
-    padding: 25px;
+  padding: 25px;
 }
 
-.main-container__head{
-    color:#000;
-    height: 20%;
-    width: 100%;
+.main-container__head {
+  color: #000;
+  height: 20%;
+  width: 100%;
 }
 
-.main-container__body{
-    height: 80%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+.main-container__body {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-
-
-.card{
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    margin: 5px;
-}
-  
-.card__upper{
-    height: 60%;
-    display: flex;
-    flex-direction: row;
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin: 5px;
 }
 
-#icon_large{
-    margin: 20px;
-    font-size: 3.5em;
-    color: #4285f4;
+.card__upper {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
 }
 
-#toggle_large{
-    margin: 15px;
-    font-size: 2em;
-    color: #4285f4;
-    /* float: left; */
-    margin-top: 20%;
+#icon_large {
+  margin: 20px;
+  font-size: 3.5em;
+  color: #4285f4;
 }
 
-#heading{
-    color:#000;
-    padding-left: 20px;
+#icon_large_1 {
+  margin: 20px;
+  font-size: 3.5em;
 }
 
-#body{
-    padding-left: 20px;
-    font-size: 10px;
+#toggle_large {
+  margin: 15px;
+  font-size: 2em;
+  color: #4285f4;
+  /* float: left; */
+  margin-top: 20%;
+}
+
+#toggle_large_1 {
+  margin: 15px;
+  font-size: 2em;
+  margin-top: 20%;
+}
+
+#heading {
+  color: #000;
+  padding-left: 20px;
+}
+
+#body {
+  padding-left: 20px;
+  font-size: 10px;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
 }

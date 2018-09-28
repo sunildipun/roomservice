@@ -2,7 +2,9 @@
     <header class="header">
         <div class="header__logo-box">
             <i id="top-button" class="fa fa-arrow-left" (click)="goToHome()" ></i>
-            <i id="top-button" class="fa fa-power-off" style="float:right"></i>
+            <i id="top-button" class="fa fa-power-off" *ngIf="!power" (click)="allControls()" style="float:right"></i>
+            <i id="top-button-1" class="fa fa-power-off" *ngIf="power" (click)="allControls()" style="float:right"></i>
+
         </div>
 
         <div class="header__text-box">
@@ -25,8 +27,11 @@
       <div class="main-container__body">
         <div class="card">
           <div class="card__upper">
-              <i id="icon_large" class="fa fa-star"></i>
-              <i id="toggle_large" class="fa fa-toggle-on"></i>
+              <i id="icon_large" *ngIf="light" class="fa fa-star"></i>
+              <i id="icon_large_1" *ngIf="!light" class="fa fa-star"></i>
+
+              <i id="toggle_large" *ngIf="light" (click)="lightAct()" class="fa fa-toggle-on"></i>
+              <i id="toggle_large_1" *ngIf="!light" (click)="lightAct()" class="fa fa-toggle-off"></i>
           </div>
           <div class="card_bottom">
             <h3 id="heading">Lights</h3>
@@ -35,8 +40,11 @@
         </div>
         <div class="card">
           <div class="card__upper">
-              <i id="icon_large" class="fa fa-thermometer-empty"></i>
-              <i id="toggle_large" class="fa fa-toggle-on"></i>
+              <i id="icon_large" *ngIf="climate" class="fa fa-thermometer-empty"></i>
+              <i id="icon_large_1" *ngIf="!climate" class="fa fa-thermometer-empty"></i>
+
+              <i id="toggle_large" *ngIf="climate" (click)="climateAct()" class="fa fa-toggle-on"></i>
+              <i id="toggle_large_1" *ngIf="!climate" (click)="climateAct()" class="fa fa-toggle-off"></i>
           </div>
           <div class="card_bottom">
             <h3 id="heading">Climate</h3>
@@ -45,8 +53,11 @@
         </div>
         <div class="card">
           <div class="card__upper">
-              <i id="icon_large" class="fa fa-music"></i>
-              <i id="toggle_large" class="fa fa-toggle-on"></i>
+              <i id="icon_large"*ngIf="music" class="fa fa-music"></i>
+              <i id="icon_large_1" *ngIf="!music" class="fa fa-music"></i>
+
+              <i id="toggle_large" *ngIf="music" (click)="musicAct()" class="fa fa-toggle-on"></i>
+              <i id="toggle_large_1" *ngIf="!music" (click)="musicAct()" class="fa fa-toggle-off"></i>
           </div>
           <div class="card_bottom">
             <h3 id="heading">Music</h3>
@@ -55,12 +66,16 @@
         </div>
         <div class="card">
           <div class="card__upper">
-              <i id="icon_large" class="fa fa-tv"></i>
-              <i id="toggle_large" class="fa fa-toggle-on"></i>
+              <i id="icon_large" *ngIf="video" class="fa fa-tv"></i>
+              <i id="icon_large_1" *ngIf="!video" class="fa fa-tv"></i>
+
+              <i id="toggle_large" *ngIf="video" (click)="videoAct()" class="fa fa-toggle-on"></i>
+              <i id="toggle_large_1" *ngIf="!video" (click)="videoAct()" class="fa fa-toggle-off"></i>
           </div>
           <div class="card_bottom">
             <h3 id="heading">Video</h3>
             <h4 id="body">Apple TV active</h4>
+            
           </div>
         </div>
       </div>

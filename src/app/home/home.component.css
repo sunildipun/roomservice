@@ -74,6 +74,7 @@ hr {
 #head-text{
     width: 60%;
     float: left;
+    font-size: 1em;
 }
 .menu-content{
     float: right;

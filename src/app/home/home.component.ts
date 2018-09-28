@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -9,12 +10,14 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   rooms : any;
+  selectedRoom: any;
   light: boolean =false;
   climate:boolean = false;
   music: boolean = false;
   video:boolean = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    private serv: DataService) { }
 
   ngOnInit() {
     this.initializeRoom();
@@ -121,7 +124,15 @@ export class HomeComponent implements OnInit {
     ]
   }
 
-  goToRoom(){
+  roomClicked(room){
+    console.log('ROOM',room)
+    this.selectedRoom = room.featuredRoom;
+
+
+  }
+
+  goToRoom(someRoom){
+    this.serv.data = someRoom;
     this.router.navigate(['rooms']);
   }
 
