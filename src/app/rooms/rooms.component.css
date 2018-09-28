@@ -150,6 +150,9 @@ li {
   */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .header__text-box{
+        top:75%;
+    }
 }
 
 /* 
@@ -166,6 +169,9 @@ li {
   */
 
 @media (min-width: 481px) and (max-width: 767px) {
+    body{
+        width:200%
+    }
 }
 
 /* 
@@ -174,4 +180,7 @@ li {
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    body{
+        width:200%
+    }
 }

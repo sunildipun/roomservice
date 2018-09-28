@@ -107,3 +107,116 @@ li{
     left: 70%;
     color: white
 }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .tab{
+        height: 5%;
+    }
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .tab{
+        height:6%;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tab{
+        height:6%;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .tab{
+        height:6%;
+    }
+    .container{
+        width:85vw;
+    }
+    .tab button{
+        font-size: 0.75em;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .cards{
+        width: 310px;
+        /* margin: 9px; */
+    }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .tab{
+        height:6%;
+    }
+    .container{
+        width:85vw;
+    }
+    .tab button{
+        font-size: 0.75em;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .cards{
+        width: 310px;
+        /* margin: 9px; */
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .tab{
+        height:6%;
+    }
+    .container{
+        width:85vw;
+    }
+    .tab button{
+        font-size: 0.75em;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .cards{
+        width: 300px;
+        margin: 9px;
+    }
+}
