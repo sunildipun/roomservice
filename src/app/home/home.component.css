@@ -69,6 +69,7 @@ hr {
 
 .cards__head{
     padding: 10px;
+    height: 18%;
 }
 
 #head-text{
@@ -103,9 +104,13 @@ li{
 .option{
     position: absolute;
     /* bottom: 0%; */
-    top: 95%;
+    top: 85%;
     left: 70%;
     color: white
+}
+
+#off{
+    color:#777;
 }
 
 /* 
@@ -133,9 +138,9 @@ li{
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .tab{
+    /* .tab{
         height:6%;
-    }
+    } */
 }
 
 /* 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from '../data.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -10,17 +11,27 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
 
   rooms : any;
+  roomStart: any;
   selectedRoom: any;
   light: boolean =false;
   climate:boolean = false;
   music: boolean = false;
   video:boolean = false;
 
+  power: boolean = true;
+
+  temp_light : boolean;
+  temp_climate: boolean;
+  temp_music: boolean;
+  temp_video: boolean;
   constructor(private router: Router,
     private serv: DataService) { }
 
   ngOnInit() {
     this.initializeRoom();
+    this.selectedRoom = this.rooms[0].featuredRoom;
+    console.log('thisf sdf', this.selectedRoom)
+ 
   }
 
   initializeRoom(){
@@ -131,9 +142,25 @@ export class HomeComponent implements OnInit {
 
   }
 
+  climateAct(){
+    this.climate = !this.climate;
+  }
+
+  musicAct(){
+    this.music = !this.music;
+  }
+  
+  videoAct(){
+    this.video = !this.video;    
+  }
+
   goToRoom(someRoom){
     this.serv.data = someRoom;
     this.router.navigate(['rooms']);
+  }
+
+  openDialog(){
+    console.log('Volume clicked')
   }
 
 }
