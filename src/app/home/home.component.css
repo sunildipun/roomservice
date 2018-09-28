@@ -225,3 +225,8 @@ li{
         margin: 9px;
     }
 }
+
+.mat-dialog-container {
+    /* add your styles */
+    color:red;
+}

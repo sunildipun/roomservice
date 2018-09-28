@@ -167,7 +167,12 @@ export class HomeComponent implements OnInit {
   openDialog(){
     console.log('Volume clicked')
     const dialogConfig = new MatDialogConfig();
-
+    dialogConfig.width = "350px";
+    dialogConfig.height = "170px";
+    dialogConfig.position = {
+      bottom: '180px',
+      left: '180px'
+  };
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.data = {

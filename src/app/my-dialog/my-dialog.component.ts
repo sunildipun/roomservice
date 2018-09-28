@@ -1,5 +1,5 @@
 import { Component, OnInit,Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 
 @Component({
   selector: 'app-my-dialog',
@@ -10,7 +10,8 @@ export class MyDialogComponent implements OnInit {
 
   modalTitle: string;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) { 
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any,
+  private dialogRef: MatDialogRef<MyDialogComponent>) { 
     this.modalTitle = data.title;
     console.log(data)
 
@@ -19,4 +20,7 @@ export class MyDialogComponent implements OnInit {
   ngOnInit() {
   }
 
+  close() {
+    this.dialogRef.close();
+}
 }

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
-import { MatDialogModule, MatButtonModule } from '@angular/material';
+import { MatDialogModule, MatButtonModule, MatSliderModule } from '@angular/material';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
@@ -34,6 +34,7 @@ const routes: Routes = [
     AngularFontAwesomeModule,
     MatDialogModule,
     MatButtonModule,
+    MatSliderModule,
 
   ],
   providers: [DataService],
