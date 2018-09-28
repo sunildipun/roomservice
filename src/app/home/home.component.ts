@@ -170,8 +170,8 @@ export class HomeComponent implements OnInit {
     dialogConfig.width = "350px";
     dialogConfig.height = "170px";
     dialogConfig.position = {
-      bottom: '180px',
-      left: '180px'
+      bottom: '460px',
+      left: '50px'
   };
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
