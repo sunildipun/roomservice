@@ -78,6 +78,7 @@ li {
 }
 
 .card {
+  flex : 1 1 auto;
   width: 200px;
   height: 200px;
   background-color: #fff;

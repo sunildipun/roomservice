@@ -15,7 +15,7 @@
         <div class="cards__head">
           <h3 id="head-text" (click)="goToRoom(someroom)">{{someroom.name}}</h3>
           <ul class="menu-content">
-            <li ><a class="fa fa-volume-up" ></a></li>
+            <li ><a class="fa fa-volume-up" (click)="openDialog()"></a></li>
             <li><a class="fa fa-power-off"></a></li>
           </ul>
         </div>
@@ -26,13 +26,13 @@
                   <li><i (click)="climateAct()" *ngIf="climate" class="fa fa-thermometer-empty"></i></li>
                   <li><i id="off" (click)="climateAct()" *ngIf="!climate" class="fa fa-thermometer-empty"></i></li>
 
-                  <li><i class="fa fa-lightbulb"></i></li>
-                  <li><i id="off" class="fa fa-lightbulb"></i></li>
+                  <!-- <li><i class="fa fa-lightbulb"></i></li>
+                  <li><i id="off" class="fa fa-lightbulb"></i></li> -->
 
-                  <li><i *ngIf="music" (click)="musicAct()" class="fa fa-music"></i></li>
+                  <!-- <li><i *ngIf="music" (click)="musicAct()" class="fa fa-music"></i></li> -->
                   <li><i *ngIf="!music" (click)="musicAct()" id="off" class="fa fa-music"></i></li>
 
-                  <li><i *ngIf="video" (click)="videoAct()" class="fa fa-tv"></i></li>
+                  <!-- <li><i *ngIf="video" (click)="videoAct()" class="fa fa-tv"></i></li> -->
                   <li><i *ngIf="video" (click)="videoAct()" id="off" class="fa fa-tv"></i></li>
 
               </ul>
